@@ -67,7 +67,7 @@ def compare_models(log_paths, labels, tag='rollout/ep_rew_mean', output_file=Non
 
 if __name__ == "__main__":
 
-    tracks = ['roundabout']#['highway', 'roundabout']
+    tracks = ['highway', 'roundabout']
     models = ['dqn', 'ppo', 'a2c']
 
     # Loop over environments and models

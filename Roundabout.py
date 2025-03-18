@@ -127,7 +127,7 @@ def train_ppo():
 # Train and Test A2C
 def train_a2c():
     # Warnings suggest using cpu for A2C without CNN
-    device = 'cuda'
+    device = 'cpu'
 
     # Experimented Params
     params = {"net_archs":([256, 256], [256, 128, 128]), 
@@ -188,9 +188,9 @@ def train_a2c():
 if __name__ == "__main__":
 
     # Train models for comparison
-    # train_dqn()
+    train_dqn()
 
-    # train_ppo()
+    train_ppo()
 
     train_a2c()
         

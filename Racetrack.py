@@ -8,6 +8,7 @@ import highway_env
 
 TRAIN = True
 
+# Adusted env config so the duration is 60 instead of 300
 CONFIG = {
     "observation": {
         "type": "OccupancyGrid",
@@ -42,7 +43,7 @@ CONFIG = {
 # Train and Test TRPO
 def train_trpo():
     # Set device
-    device = 'cuda' if torch.cuda.is_available() else 'cpu'
+    device = 'cpu'
 
     # Experiment Params
     params = {"net_archs":([256, 256, 256]), 
@@ -214,7 +215,7 @@ def train_a2c():
 if __name__ == "__main__":
 
     # Train models for comparison
-    # train_trpo()
+    train_trpo()
 
     train_ppo()
 
