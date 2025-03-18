@@ -71,7 +71,7 @@ if __name__ == "__main__":
     models = ['dqn', 'ppo', 'a2c']
 
     # Loop over environments and models
-    for i in range(1):
+    for i in range(len(tracks)):
         try:
             os.makedirs(f"./{tracks[i]}_charts/", exist_ok=True)
         except OSError as e:
