@@ -1,3 +1,8 @@
+# Matthew Mackey
+# 2174428 
+# Group 16
+# CSC-580-810 
+
 import os
 import matplotlib.pyplot as plt
 from tensorboard.backend.event_processing import event_accumulator

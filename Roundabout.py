@@ -1,3 +1,8 @@
+# Matthew Mackey
+# 2174428 
+# Group 16
+# CSC-580-810 
+
 import gymnasium as gym
 from gymnasium.wrappers import RecordVideo
 from stable_baselines3 import DQN, PPO, A2C
